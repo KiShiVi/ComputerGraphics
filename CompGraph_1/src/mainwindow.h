@@ -21,4 +21,4 @@ private:
     void draw();
 
     QVector<Figures::Figure2D * > figures;
-};
+}; // MainWindow

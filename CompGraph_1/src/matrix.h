@@ -89,7 +89,7 @@ namespace MathLogic
         //! \return Поток вывода
         //!
         friend QDebug operator<<(QDebug stream, const Matrix & matrix);
-    };
+    }; // Matrix
 
     //!
     //! \brief operator * Перегрузка оператора умножения на константу (константа слева в выражении)
@@ -98,4 +98,4 @@ namespace MathLogic
     //! \return Итоговая матрица
     //!
     Matrix operator*(const float value, const Matrix & matrix);
-}
+} // MathLogic
