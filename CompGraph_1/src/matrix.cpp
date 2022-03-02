@@ -1,8 +1,8 @@
 #include "matrix.h"
 
-namespace Math
+namespace MathLogic
 {
-    Matrix::Matrix( float a, float b )
+    Matrix::Matrix( quint8 a, quint8 b )
     {
         m_matrix.resize(a);
         for ( int i = 0; i < a; ++i )

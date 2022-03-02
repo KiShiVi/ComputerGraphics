@@ -3,7 +3,7 @@
 #include <QVector>
 #include <QDebug>
 
-namespace Math
+namespace MathLogic
 {
     //!
     //! \brief The Matrix class Класс матрицы для графических преобразований
@@ -16,7 +16,7 @@ namespace Math
         //! \param a Кол-во строк
         //! \param b Кол-во столбцов
         //!
-        Matrix( float a, float b );
+        Matrix( quint8 a, quint8 b );
         //!
         //! \brief Matrix Конструктор
         //! \param m_matrix Матрица из векторов

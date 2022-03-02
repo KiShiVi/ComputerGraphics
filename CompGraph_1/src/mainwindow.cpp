@@ -17,7 +17,7 @@ void MainWindow::resizeGL( int w, int h )
     glMatrixMode(GL_PROJECTION);
     glViewport(0, 0, w, h);
     glLoadIdentity();
-    glOrtho( 0, 100, 100, 0, -1, 1 );
+    glOrtho( -1, 1, -1, 1, -1, 1 );
 }
 
 void MainWindow::paintGL()
@@ -30,11 +30,11 @@ void MainWindow::paintGL()
 void MainWindow::draw()
 {
     glBegin(GL_LINES);
-        glColor3f( 0, 0, 0 ); glVertex2f( 0, 50 );
-        glColor3f( 0, 0, 0 ); glVertex2f( 100, 50 );
+        glColor3f( 0, 0, 0 ); glVertex2f( -1, 0 );
+        glColor3f( 0, 0, 0 ); glVertex2f( 1, 0 );
 
-        glColor3f( 0, 0, 0 ); glVertex2f( 50, 0 );
-        glColor3f( 0, 0, 0 ); glVertex2f( 50, 100 );
+        glColor3f( 0, 0, 0 ); glVertex2f( 0, -1 );
+        glColor3f( 0, 0, 0 ); glVertex2f( 0, 1 );
     glEnd();
 }
 

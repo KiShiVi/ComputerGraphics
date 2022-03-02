@@ -24,10 +24,10 @@ int main(int argc, char *argv[])
 
 //    qDebug() << "\n\n" << m;
 
-    Math::Matrix a( QVector<QVector<float> > { { 1, 2 },
+    MathLogic::Matrix a( QVector<QVector<float> > { { 1, 2 },
                                                { 3, 4 } } );
 
-    Math::Matrix b( QVector<QVector<float> > { { 4, 3 },
+    MathLogic::Matrix b( QVector<QVector<float> > { { 4, 3 },
                                                { 2, 1 } } );
     qDebug() << (a * b - a) * 2;
 
