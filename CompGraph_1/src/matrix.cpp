@@ -24,7 +24,7 @@ namespace MathLogic
         }
     }
 
-    QPair<int, int> Matrix::getDimension() const
+    QPair<quint8, quint8> Matrix::getDimension() const
     {
         return QPair<int, int>( m_matrix.size(), m_matrix[0].size() );
     }

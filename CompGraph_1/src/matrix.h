@@ -26,7 +26,7 @@ namespace MathLogic
         //! \brief getDimension Возвращает размерность матрицы
         //! \return QPair с размерностью матрицы
         //!
-        QPair<int, int> getDimension() const;
+        QPair<quint8, quint8> getDimension() const;
         //!
         //! \brief valueOf Возвращает адрес на ячейку по её индексу. Индексация от нуля
         //! \param a Первый индекс (номер строки)

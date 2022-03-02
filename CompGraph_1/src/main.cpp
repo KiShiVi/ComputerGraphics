@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 
     MathLogic::Matrix b( QVector<QVector<float> > { { 4, 3 },
                                                { 2, 1 } } );
-    qDebug() << (a * b - a) * 2;
+    qDebug() << ( a * b - a ) * 2;
 
     return app.exec();
 }

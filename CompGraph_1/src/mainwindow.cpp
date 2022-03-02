@@ -9,8 +9,16 @@ MainWindow::MainWindow(QWidget *parent)
                                           1, 1 ) );
     figures.append( new Figures::Line2D( -1, 1,
                                           1, -1 ) );
-    figures.append( new Figures::Rectangle2D ( -0.5, -0.5,
-                                               -0.1, -0.2 ) );
+    figures.append( new Figures::Rectangle2D ( -0.5, -0.2,
+                                               -0.1, -0.5 ) );
+    figures.append( new Figures::Rectangle2D ( -0.5, -0.2,
+                                               -0.1, -0.5 ) );
+    figures[3]->scaling(2);
+
+    figures.append( new Figures::Rectangle2D ( -0.5, -0.2,
+                                               -0.1, -0.5 ) );
+
+    figures[4]->scaling(0.5);
 }
 
 void MainWindow::initializeGL()

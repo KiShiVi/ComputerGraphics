@@ -27,5 +27,10 @@ namespace Figures
         //! \brief draw Метод отрисовки фигуры
         //!
         void draw() override;
+        //!
+        //! \brief getCenter Возвращает центр фигуры
+        //! \return Координаты центра фигуры
+        //!
+        QPair<float, float> getCenter() override;
     }; // Rectangle2D
 } // Figures

@@ -22,8 +22,18 @@ namespace Figures
         //!
         virtual void draw();
         //!
+        //! \brief getCenter Виртуальный метод, который определяют в себе дочерние классы
+        //! \return Возвращает координаты центра фигуры
+        //!
+        virtual QPair<float, float> getCenter();
+        //!
+        //! \brief scaling Метод масштабирования фигуры
+        //! \param scaleValue Значение масштабирования
+        //!
+        void scaling( float scaleValue );
+        //!
         //! \brief matrix Матрица с координатами
         //!
-        MathLogic::Matrix * matrix;
+        MathLogic::Matrix * m_matrix;
     }; // Figure2D
 } // Figures
