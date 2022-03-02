@@ -4,11 +4,11 @@
 
 namespace Figures
 {
-    class Point2D : public Figures::Figure2D
+    class Line2D: public Figure2D
     {
     public:
-        Point2D();
-        Point2D( float x, float y );
+        Line2D();
+        Line2D( float x1, float y1, float x2, float y2 );
         void draw() override;
     };
 }

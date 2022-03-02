@@ -5,6 +5,12 @@
 MainWindow::MainWindow(QWidget *parent)
     : QOpenGLWidget(parent)
 {
+    figures.append( new Figures::Line2D( -1, -1,
+                                          1, 1 ) );
+    figures.append( new Figures::Line2D( -1, 1,
+                                          1, -1 ) );
+    figures.append( new Figures::Rectangle2D ( -0.5, -0.5,
+                                               -0.1, -0.2 ) );
 }
 
 void MainWindow::initializeGL()
@@ -29,13 +35,9 @@ void MainWindow::paintGL()
 
 void MainWindow::draw()
 {
-    glBegin(GL_LINES);
-        glColor3f( 0, 0, 0 ); glVertex2f( -1, 0 );
-        glColor3f( 0, 0, 0 ); glVertex2f( 1, 0 );
-
-        glColor3f( 0, 0, 0 ); glVertex2f( 0, -1 );
-        glColor3f( 0, 0, 0 ); glVertex2f( 0, 1 );
-    glEnd();
+    foreach(Figures::Figure2D * figure, figures){
+        figure->draw();
+    }
 }
 
 
