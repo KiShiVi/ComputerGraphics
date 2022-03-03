@@ -2,4 +2,4 @@
  
 ## Лабораторная работа №1
 
-![Game](![Game](https://github.com/KiShiVi/Tic-Tac-Toe-Python/blob/main/media/gameExample.gif))
+![Game](![Game](https://github.com/KiShiVi/ComputerGraphics/blob/main/Media/CompGraph1.gif)
