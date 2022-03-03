@@ -31,6 +31,6 @@ namespace Figures
         //! \brief getCenter Возвращает центр фигуры
         //! \return Координаты центра фигуры
         //!
-        QPair<float, float> getCenter() override;
+        QPair<float, float> getCenter()override;
     }; // Rectangle2D
 } // Figures

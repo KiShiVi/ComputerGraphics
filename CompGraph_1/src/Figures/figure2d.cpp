@@ -17,7 +17,7 @@ namespace Figures
         throw std::invalid_argument( "getCenter method not overridden" );
     }
 
-    void Figure2D::scaling(float scaleValue)
+    void Figure2D::scaling( const float scaleValue)
     {
         MathLogic::Matrix scaleMatrix( m_matrix->getDimension().second, m_matrix->getDimension().second );
         for (int i = 0; i < m_matrix->getDimension().second; ++i)

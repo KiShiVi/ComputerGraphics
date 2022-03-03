@@ -30,7 +30,7 @@ namespace Figures
         //! \brief scaling Метод масштабирования фигуры
         //! \param scaleValue Значение масштабирования
         //!
-        void scaling( float scaleValue );
+        void scaling( const float scaleValue );
         //!
         //! \brief matrix Матрица с координатами
         //!
