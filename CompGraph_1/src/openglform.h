@@ -35,6 +35,11 @@ public:
     //! \return Ссылка на фигуру
     //!
     Figures::Figure2D & getByIndex( const int index );
+    //!
+    //! \brief size Возвращает кол-во активных фигур
+    //! \return Кол-во фигур
+    //!
+    int size();
 
 private:
     //!

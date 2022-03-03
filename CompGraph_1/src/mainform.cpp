@@ -95,5 +95,6 @@ void MainForm::onAddFigureButtonClicked()
 
 void MainForm::onChangeFigureScaleButtonClicked()
 {
-    emit changeFigureScaleSignal( openGlWidget->getByIndex( n_le->text().toInt() ), scale_le->text().toFloat() );
+    if ( n_le->text().toInt() >= 1 && n_le->text().toInt() < openGlWidget->size() )
+        emit changeFigureScaleSignal( openGlWidget->getByIndex( n_le->text().toInt() ), scale_le->text().toFloat() );
 }

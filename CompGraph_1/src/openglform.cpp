@@ -24,6 +24,11 @@ Figures::Figure2D & OpenGLForm::getByIndex(const int index)
     return * figures[index];
 }
 
+int OpenGLForm::size()
+{
+    return figures.size();
+}
+
 void OpenGLForm::initializeGL()
 {
     glClearColor( 1.0f, 1.0f, 1.0f, 1.0f );
