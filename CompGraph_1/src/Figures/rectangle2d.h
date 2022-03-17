@@ -7,7 +7,7 @@ namespace Figures
     //!
     //! \brief The Rectangle2D class Класс двухмерного прямоугольника
     //!
-    class Rectangle2D : public Figures::Figure2D
+  class Rectangle2D : public Figures::Figure2D
     {
     public:
         //!

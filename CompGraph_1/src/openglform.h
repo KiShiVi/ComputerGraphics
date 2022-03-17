@@ -2,6 +2,8 @@
 
 #include <FiguresLib>
 #include <Matrix>
+#include <QList>
+#include <QPair>
 
 #include <QOpenGLWidget>
 

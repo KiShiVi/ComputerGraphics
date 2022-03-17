@@ -11,7 +11,7 @@
 #include <QGroupBox>
 
 //!
-//! \brief The MainForm class Основная форма приложения
+//! \brief The MainForm class Основная форма приложения первой лабораторной работы
 //!
 class MainForm : public QWidget
 {

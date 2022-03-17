@@ -13,8 +13,10 @@ SOURCES += \
     src/Figures/line2d.cpp \
     src/Figures/point2d.cpp \
     src/Figures/rectangle2d.cpp \
+    src/Figures/spline2d.cpp \
     src/main.cpp \
     src/mainform.cpp \
+    src/mainform2.cpp \
     src/matrix.cpp \
     src/openglform.cpp
 
@@ -24,7 +26,9 @@ HEADERS += \
     src/Figures/line2d.h \
     src/Figures/point2d.h \
     src/Figures/rectangle2d.h \
+    src/Figures/spline2d.h \
     src/mainform.h \
+    src/mainform2.h \
     src/matrix.h \
     src/openglform.h
 
