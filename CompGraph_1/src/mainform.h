@@ -1,8 +1,7 @@
 #pragma once
 
-#include "openglform.h"
-#include "Figures/rectangle2d.h"
-#include "Figures/figure2d.h"
+#include <OpenGLFormLib>
+#include <FiguresLib>
 #include <QWidget>
 #include <QHBoxLayout>
 #include <QVBoxLayout>

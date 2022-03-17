@@ -1,10 +1,7 @@
 #pragma once
 
-#include "Figures/figure2d.h"
-#include "Figures/line2d.h"
-#include "Figures/rectangle2d.h"
-#include "Figures/coordinateaxes.h"
-#include "matrix.h"
+#include <FiguresLib>
+#include <Matrix>
 
 #include <QOpenGLWidget>
 
