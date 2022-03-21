@@ -47,6 +47,13 @@ namespace Figures {
                 p.draw();
             }
 
+            glBegin(GL_LINE_STRIP);
+            for ( int i = 0; i < m_matrix->getDimension().first; ++i )
+            {
+                glColor3f( 1, 0, 0 ); glVertex2f( m_matrix->valueOf( i, 0 ), m_matrix->valueOf( i, 1 ) );
+            }
+            glColor3f( 1, 0, 0 ); glVertex2f( m_matrix->valueOf( 0, 0 ), m_matrix->valueOf( 0, 1 ) );
+            glEnd();
 
             // Здесь крутим t, чтобы прорисовывать кривую дальше и дальше
             glBegin(GL_LINE_STRIP);
