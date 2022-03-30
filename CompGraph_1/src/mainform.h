@@ -67,5 +67,5 @@ private:
     QLineEdit * y2_le;              //!< Ссылка на QLineEdit координаты Y второй точки прямоугольника
     QLineEdit * n_le;               //!< Ссылка на QLineEdit номера изменяемой фигуры
     QLineEdit * scale_le;           //!< Ссылка на QLineEdit нового масштаба фигуры
-    OpenGLForm  * openGlWidget;     //!< Ссылка на форму OpenGL
+    OpenGLForm2D  * openGlWidget;     //!< Ссылка на форму OpenGL
 }; // MainForm

@@ -62,6 +62,15 @@ namespace MathLogic
         return tmpMatrix;
     }
 
+    Matrix Matrix::operator/(const float value_) const
+    {
+        Matrix tmpMatrix( this->getDimension().first, this->getDimension().second );
+        for ( int i = 0; i < tmpMatrix.getDimension().first; ++i )
+            for ( int j = 0; j < tmpMatrix.getDimension().second; ++j )
+                tmpMatrix.valueOf( i, j ) = this->valueOf( i, j ) / value_;
+        return tmpMatrix;
+    }
+
     Matrix Matrix::operator*( const float value_ ) const
     {
         Matrix tmpMatrix( this->getDimension().first, this->getDimension().second );

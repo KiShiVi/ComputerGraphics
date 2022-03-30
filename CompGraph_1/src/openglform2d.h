@@ -10,7 +10,7 @@
 //!
 //! \brief The OpenGLForm class Форма OpenGL для отрисовки объектов
 //!
-class OpenGLForm : public QOpenGLWidget
+class OpenGLForm2D : public QOpenGLWidget
 {
     Q_OBJECT
 
@@ -19,7 +19,7 @@ public:
     //! \brief OpenGLForm Конструктор
     //! \param parent Родительский виджет
     //!
-    OpenGLForm( QWidget * parent = nullptr );
+    OpenGLForm2D( QWidget * parent = nullptr );
     //!
     //! \brief clearAll Очистить поле, включая координатные оси
     //!

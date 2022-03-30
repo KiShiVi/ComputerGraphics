@@ -1,40 +1,40 @@
-#include "openglform.h"
+#include "openglform2d.h"
 
 //#include <QOpenGLFunctions_1_0>
 
-OpenGLForm::OpenGLForm(QWidget *parent)
+OpenGLForm2D::OpenGLForm2D(QWidget *parent)
     : QOpenGLWidget(parent)
 {
     figures.append( new Figures::CoordinateAxes() );
 }
 
-void OpenGLForm::clearAll()
+void OpenGLForm2D::clearAll()
 {
     figures.clear();
 }
 
-void OpenGLForm::clear()
+void OpenGLForm2D::clear()
 {
     figures.clear();
     figures.append( new Figures::CoordinateAxes() );
 }
 
-Figures::Figure2D & OpenGLForm::getByIndex(const int index)
+Figures::Figure2D & OpenGLForm2D::getByIndex(const int index)
 {
     return * figures[index];
 }
 
-int OpenGLForm::size()
+int OpenGLForm2D::size()
 {
     return figures.size();
 }
 
-void OpenGLForm::initializeGL()
+void OpenGLForm2D::initializeGL()
 {
     glClearColor( 1.0f, 1.0f, 1.0f, 1.0f );
 }
 
-void OpenGLForm::resizeGL( int w, int h )
+void OpenGLForm2D::resizeGL( int w, int h )
 {
     glMatrixMode(GL_PROJECTION);
     glViewport(0, 0, w, h);
@@ -42,35 +42,35 @@ void OpenGLForm::resizeGL( int w, int h )
     glOrtho( -1, 1, -1, 1, -1, 1 );
 }
 
-void OpenGLForm::paintGL()
+void OpenGLForm2D::paintGL()
 {
 
     glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
     draw();
 }
 
-void OpenGLForm::draw()
+void OpenGLForm2D::draw()
 {
     foreach(Figures::Figure2D * figure, figures){
         figure->draw();
     }
 }
 
-void OpenGLForm::onClear()
+void OpenGLForm2D::onClear()
 {
     clear();
     paintGL();
     update();
 }
 
-void OpenGLForm::addFigure( Figures::Figure2D * figure )
+void OpenGLForm2D::addFigure( Figures::Figure2D * figure )
 {
     figures.append( figure );
     paintGL();
     update();
 }
 
-void OpenGLForm::changeFigureScale( Figures::Figure2D & figure, float scale )
+void OpenGLForm2D::changeFigureScale( Figures::Figure2D & figure, float scale )
 {
     figure.scaling(scale);
     paintGL();

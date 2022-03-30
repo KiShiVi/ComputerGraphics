@@ -60,6 +60,12 @@ namespace MathLogic
         //!
         Matrix operator*( const float value_ ) const;
         //!
+        //! \brief operator / Перегрузка оператора деления на константу
+        //! \param value_ Число
+        //! \return Итоговая матрица
+        //!
+        Matrix operator/( const float value_ ) const;
+        //!
         //! \brief operator - Перегрузка оператора унарного минуса
         //! \return Итоговая матрица
         //!

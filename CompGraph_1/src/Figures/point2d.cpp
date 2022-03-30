@@ -16,7 +16,7 @@ namespace Figures
     {
         glPointSize(5);
         glBegin(GL_POINTS);
-            glColor3f( 1, 0, 0 ); glVertex2f( m_matrix->valueOf( 0, 0 ) , m_matrix->valueOf( 0, 1 ) );
+            glColor3f( 1, 0, 0 ); glVertex2f( m_matrix->valueOf( 0, 0 ), m_matrix->valueOf( 0, 1 ) );
         glEnd();
     }
 }

@@ -4,3 +4,6 @@
 #include "../CompGraph_1/src/Figures/point2d.h"
 #include "../CompGraph_1/src/Figures/rectangle2d.h"
 #include "../CompGraph_1/src/Figures/spline2d.h"
+#include "../CompGraph_1/src/Figures/point3d.h"
+#include "../CompGraph_1/src/Figures/line3d.h"
+#include "../CompGraph_1/src/Figures/bilinearplane3d.h"

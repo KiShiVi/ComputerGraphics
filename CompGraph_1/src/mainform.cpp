@@ -17,7 +17,7 @@ void MainForm::initGui()
 
 
     setFixedSize( 1000, 520 );
-    openGlWidget = new OpenGLForm( );
+    openGlWidget = new OpenGLForm2D( );
     openGlWidget->setFixedSize(500, 500);
 
     QHBoxLayout * mainLayout            = new QHBoxLayout();

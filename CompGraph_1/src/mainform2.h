@@ -58,7 +58,7 @@ private:
     //!
     //! \brief openGlWidget Указатель на OpenGL форму
     //!
-    OpenGLForm  * openGlWidget;
+    OpenGLForm2D  * openGlWidget;
     //!
     //! \brief inWidgets Указатель на слой с QLineEdit (для изменения при увелечении/уменьшении кол-ва полей)
     //!
