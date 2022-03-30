@@ -19,4 +19,4 @@ https://youtu.be/0WVURdDX7VM
 ### Демонстрация работы:
 ---
 
-![Game](https://github.com/KiShiVi/ComputerGraphics/blob/main/Media/CompGraph3.gif)
+![Game](https://github.com/KiShiVi/ComputerGraphics/blob/main/Media/Compgraph3.gif)
