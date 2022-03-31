@@ -17,6 +17,6 @@ https://youtu.be/0WVURdDX7VM
 ## Лабораторная работа №3
 
 ### Демонстрация работы:
----
+https://youtu.be/jFx_bM8APoE
 
 ![Game](https://github.com/KiShiVi/ComputerGraphics/blob/main/Media/Compgraph3.gif)
