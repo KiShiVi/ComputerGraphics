@@ -13,3 +13,10 @@ https://youtu.be/e8v-ezE6efg
 https://youtu.be/0WVURdDX7VM
 
 ![Game](https://github.com/KiShiVi/ComputerGraphics/blob/main/Media/CompGraph2.gif)
+
+## Лабораторная работа №3
+
+### Демонстрация работы:
+https://youtu.be/jFx_bM8APoE
+
+![Game](https://github.com/KiShiVi/ComputerGraphics/blob/main/Media/Compgraph3.gif)
