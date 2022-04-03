@@ -17,11 +17,6 @@ int main(int argc, char *argv[])
     //w1.show();
     //w2.show();
 
-    //QWidget wgt;
-    //OpenGLForm3D * glForm = new OpenGLForm3D( & wgt );
-    //glForm->setFixedSize(500, 500);
-    //wgt.show();
-
     MainForm3 w3;
     w3.show();
 

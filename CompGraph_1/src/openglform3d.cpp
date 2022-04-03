@@ -6,13 +6,6 @@ OpenGLForm3D::OpenGLForm3D( QWidget * parent )
     //!@todo Добавление координатных осей
     //figures.append( new Figures::CoordinateAxes() );
     figures.append( new Figures::BilinearPlane3D() );
-//    figures.append( new Figures::Point3D ( 0, 0, 0 ) );
-//    figures.append( new Figures::Point3D ( 0.1, 0, 0 ) );
-//    figures.append( new Figures::Point3D ( 0, 0.1, 0 ) );
-//    figures.append( new Figures::Point3D ( -0.1, 0, 0 ) );
-//    figures.append( new Figures::Point3D ( 0, -0.1, 0 ) );
-//    figures.append( new Figures::Point3D ( 0, 0, 0.1 ) );
-//    figures.append( new Figures::Point3D ( 0, 0, -0.1 ) );
 }
 
 void OpenGLForm3D::clearAll()

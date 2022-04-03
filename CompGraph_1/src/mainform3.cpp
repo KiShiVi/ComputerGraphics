@@ -119,8 +119,8 @@ void MainForm3::onZAngleChanched()
 {
     static int prevValue = 0;
     if ( listOfAngles[2]->value() > prevValue )
-        emit XAngleChanched( 0.1, nullptr );
+        emit ZAngleChanched( 0.1, nullptr );
     else if ( listOfAngles[2]->value() < prevValue )
-        emit XAngleChanched( -0.1, nullptr );
+        emit ZAngleChanched( -0.1, nullptr );
     prevValue = listOfAngles[2]->value();
 }
