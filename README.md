@@ -20,3 +20,10 @@ https://youtu.be/0WVURdDX7VM
 https://youtu.be/jFx_bM8APoE
 
 ![Game](https://github.com/KiShiVi/ComputerGraphics/blob/main/Media/Compgraph3.gif)
+
+## Лабораторная работа №4
+
+### Демонстрация работы:
+https://youtu.be/UsejJpQ-yoY
+
+![Game](https://github.com/KiShiVi/ComputerGraphics/blob/main/Media/Compgraph4.gif)

@@ -22,6 +22,7 @@ SOURCES += \
     src/mainform.cpp \
     src/mainform2.cpp \
     src/mainform3.cpp \
+    src/mainform4.cpp \
     src/matrix.cpp \
     src/openglform2d.cpp \
     src/openglform3d.cpp
@@ -40,6 +41,7 @@ HEADERS += \
     src/mainform.h \
     src/mainform2.h \
     src/mainform3.h \
+    src/mainform4.h \
     src/matrix.h \
     src/openglform2d.h \
     src/openglform3d.h

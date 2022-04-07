@@ -20,11 +20,14 @@ namespace Figures
         //! \param y1 Координата первой точки по Y
         //! \param x2 Координата второй точки по X
         //! \param y2 Координата второй точки по Y
+        //! \param color Цвет отрезка
         //!
-        Line2D( float x1, float y1, float x2, float y2 );
+        Line2D( float x1, float y1, float x2, float y2, int color = 0 );
         //!
         //! \brief draw Метод отрисовки объекта
         //!
         void draw() override;
+    private:
+        int color;
     }; // Line2D
 } // Figures

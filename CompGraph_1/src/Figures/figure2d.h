@@ -4,6 +4,16 @@
 
 #include <QOpenGLWidget>
 
+//!
+//! \brief The Colors enum Перечисление цветов отрезка
+//!
+enum Colors{
+    LINE_BLACK,     //!< Черный
+    LINE_GREEN,     //!< Зеленый
+    LINE_YELLOW,    //!< Желтый
+    LINE_RED        //!< Красный
+};
+
 namespace Figures
 {
     //!
