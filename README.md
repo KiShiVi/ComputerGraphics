@@ -31,13 +31,13 @@ https://youtu.be/UsejJpQ-yoY
 ## Лабораторная работа №5
 
 ### Демонстрация работы:
-https://youtu.be/dqYdXXw33rY
+https://youtu.be/BrxDZ-yLliU
 
 ![Game](https://github.com/KiShiVi/ComputerGraphics/blob/main/Media/Compgraph5.gif)
 
 ## Лабораторная работа №6
 
 ### Демонстрация работы:
-https://youtu.be/dqYdXXw33rY
+https://youtu.be/BrxDZ-yLliU
 
 ![Game](https://github.com/KiShiVi/ComputerGraphics/blob/main/Media/Compgraph6.gif)
