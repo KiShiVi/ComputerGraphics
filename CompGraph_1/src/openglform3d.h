@@ -88,4 +88,5 @@ private:
     //! \brief figures Контейнер для хранения всех фигур на форме
     //!
     QVector<Figures::Figure3D * > figures;
+    Figures::Point3D * lightPoint;
 };

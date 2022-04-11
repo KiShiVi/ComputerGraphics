@@ -35,6 +35,12 @@ namespace MathLogic
         //!
         float & valueOf( int a, int b );
         //!
+        //! \brief getListRow Возвращает QList строки
+        //! \param a Номер строки
+        //! \return Лист со строкой
+        //!
+        QList<float> getListRow( int a );
+        //!
         //! \brief valueOf Возвращает адрес на ячейку по её индексу. Индексация от нуля (CONST)
         //! \param a Второй индекс (номер столбца)
         //! \param b Первый индекс (номер строки)

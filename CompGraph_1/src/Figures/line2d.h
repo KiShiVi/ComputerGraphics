@@ -28,6 +28,9 @@ namespace Figures
         //!
         void draw() override;
     private:
+        //!
+        //! \brief color Цвет
+        //!
         int color;
     }; // Line2D
 } // Figures

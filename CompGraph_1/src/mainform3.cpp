@@ -13,6 +13,8 @@ void MainForm3::initGui()
     openGlWidget = new OpenGLForm3D();
     openGlWidget->setFixedSize(500, 500);
 
+    openGlWidget->addFigure( new Figures::BilinearPlane3D() );
+
     connect( this, SIGNAL( coordsChanched( QList<QList<float>>, Figures::Figure3D * ) ),
              openGlWidget, SLOT( setCoords( QList<QList<float>>, Figures::Figure3D * ) ) );
     connect( this, SIGNAL( XAngleChanched( float, Figures::Figure3D * ) ),

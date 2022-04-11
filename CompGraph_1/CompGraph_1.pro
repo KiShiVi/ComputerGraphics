@@ -10,6 +10,7 @@ CONFIG += c++11
 SOURCES += \
     src/Figures/bilinearplane3d.cpp \
     src/Figures/coordinateaxes.cpp \
+    src/Figures/cube3d.cpp \
     src/Figures/figure2d.cpp \
     src/Figures/figure3d.cpp \
     src/Figures/line2d.cpp \
@@ -18,11 +19,13 @@ SOURCES += \
     src/Figures/point3d.cpp \
     src/Figures/rectangle2d.cpp \
     src/Figures/spline2d.cpp \
+    src/graphictools.cpp \
     src/main.cpp \
     src/mainform.cpp \
     src/mainform2.cpp \
     src/mainform3.cpp \
     src/mainform4.cpp \
+    src/mainform5.cpp \
     src/matrix.cpp \
     src/openglform2d.cpp \
     src/openglform3d.cpp
@@ -30,6 +33,7 @@ SOURCES += \
 HEADERS += \
     src/Figures/bilinearplane3d.h \
     src/Figures/coordinateaxes.h \
+    src/Figures/cube3d.h \
     src/Figures/figure2d.h \
     src/Figures/figure3d.h \
     src/Figures/line2d.h \
@@ -38,10 +42,12 @@ HEADERS += \
     src/Figures/point3d.h \
     src/Figures/rectangle2d.h \
     src/Figures/spline2d.h \
+    src/graphictools.h \
     src/mainform.h \
     src/mainform2.h \
     src/mainform3.h \
     src/mainform4.h \
+    src/mainform5.h \
     src/matrix.h \
     src/openglform2d.h \
     src/openglform3d.h

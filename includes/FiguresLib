@@ -7,3 +7,4 @@
 #include "../CompGraph_1/src/Figures/point3d.h"
 #include "../CompGraph_1/src/Figures/line3d.h"
 #include "../CompGraph_1/src/Figures/bilinearplane3d.h"
+#include "../CompGraph_1/src/Figures/cube3d.h"

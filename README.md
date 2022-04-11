@@ -27,3 +27,17 @@ https://youtu.be/jFx_bM8APoE
 https://youtu.be/UsejJpQ-yoY
 
 ![Game](https://github.com/KiShiVi/ComputerGraphics/blob/main/Media/Compgraph4.gif)
+
+## Лабораторная работа №5
+
+### Демонстрация работы:
+https://youtu.be/dqYdXXw33rY
+
+![Game](https://github.com/KiShiVi/ComputerGraphics/blob/main/Media/Compgraph5.gif)
+
+## Лабораторная работа №6
+
+### Демонстрация работы:
+https://youtu.be/dqYdXXw33rY
+
+![Game](https://github.com/KiShiVi/ComputerGraphics/blob/main/Media/Compgraph6.gif)

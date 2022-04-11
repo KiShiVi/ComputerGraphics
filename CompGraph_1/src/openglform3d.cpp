@@ -5,7 +5,7 @@ OpenGLForm3D::OpenGLForm3D( QWidget * parent )
 {
     //!@todo Добавление координатных осей
     //figures.append( new Figures::CoordinateAxes() );
-    figures.append( new Figures::BilinearPlane3D() );
+    lightPoint = new Figures::Point3D(-0.4, 0.4, 0.4);
 }
 
 void OpenGLForm3D::clearAll()
@@ -44,6 +44,7 @@ void OpenGLForm3D::draw()
     foreach(Figures::Figure3D * figure, figures){
         figure->draw();
     }
+    lightPoint->draw();
 }
 
 void OpenGLForm3D::onClear()

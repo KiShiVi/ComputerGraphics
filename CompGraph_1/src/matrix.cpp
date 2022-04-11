@@ -34,6 +34,11 @@ namespace MathLogic
         return m_matrix[a][b];
     }
 
+    QList<float> Matrix::getListRow( int a )
+    {
+        return QList<float>( m_matrix[a] );
+    }
+
     float Matrix::valueOf( int a, int b ) const
     {
         return m_matrix[a][b];
