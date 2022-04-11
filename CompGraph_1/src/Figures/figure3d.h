@@ -38,6 +38,10 @@ namespace Figures
         //! \brief m_matrix Матрица с координатами
         //!
         MathLogic::Matrix * m_matrix;
+        //!
+        //! \brief lightingIntensity Интенсивность освещения
+        //!
+        float lightingIntensity;
     };
 }
 

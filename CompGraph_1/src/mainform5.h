@@ -37,6 +37,11 @@ signals:
     //! \param figure Фигура
     //!
     void ZAngleChanched( float angle, Figures::Figure3D * figure );
+    //!
+    //! \brief lightChanged Сигнал изменения интенсивности свечения
+    //! \param value значение интенсивности свечения
+    //!
+    void lightChanged( int value );
 
 private:
     //!
@@ -48,6 +53,7 @@ private slots:
     void onXAngleChanched();
     void onYAngleChanched();
     void onZAngleChanched();
+    void onLightChanged( int value );
 
 private:
     //!

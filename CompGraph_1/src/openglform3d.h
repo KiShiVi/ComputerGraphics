@@ -82,6 +82,11 @@ public slots:
     //! \param figure Фигура
     //!
     void rotateViaOZ( float angle, Figures::Figure3D * figure = nullptr );
+    //!
+    //! \brief onLightChanged Изменение интенсивности свечения
+    //! \param value Значение
+    //!
+    void onLightChanged( int value );
 
 private:
     //!

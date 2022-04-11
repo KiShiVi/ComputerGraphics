@@ -120,3 +120,10 @@ void OpenGLForm3D::rotateViaOZ( float angle, Figures::Figure3D * figure )
     paintGL();
     update();
 }
+
+void OpenGLForm3D::onLightChanged(int value)
+{
+    figures[0]->lightingIntensity = (float)value / 100;
+    paintGL();
+    update();
+}

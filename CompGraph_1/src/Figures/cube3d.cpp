@@ -10,6 +10,8 @@ namespace Figures
 
     Figures::Cube3D::Cube3D(QPair<QList<float>, QList<float>> coords)
     {
+        lightingIntensity = 1;
+
         m_matrix = new MathLogic::Matrix( 8, 3 );
 
         // Первая вершина
@@ -65,7 +67,7 @@ namespace Figures
                                                                 m_matrix->getListRow( 2 ),
                                                                 m_matrix->getListRow( 3 ) };
 
-        float cosOfSide = findAngleOfFacetAndPoint( lightColor, tmpListFacet, 1 );
+        float cosOfSide = findAngleOfFacetAndPoint( lightColor, tmpListFacet, 1 ) * lightingIntensity;
         if ( isVisibleFacet( tmpListFacet ) )
              drawFacet( tmpListFacet, QList<float>{ 1 * cosOfSide, 0 * cosOfSide, 0 * cosOfSide } );
 
@@ -76,7 +78,7 @@ namespace Figures
                                              m_matrix->getListRow( 6 ),
                                              m_matrix->getListRow( 2 ) };
 
-         cosOfSide = findAngleOfFacetAndPoint( lightColor, tmpListFacet, 1 );
+         cosOfSide = findAngleOfFacetAndPoint( lightColor, tmpListFacet, 1 ) * lightingIntensity;
          if ( isVisibleFacet( tmpListFacet ) )
               drawFacet( tmpListFacet, QList<float>{ 0 * cosOfSide, 1 * cosOfSide, 0 * cosOfSide } );
 
@@ -87,7 +89,7 @@ namespace Figures
                                              m_matrix->getListRow( 5 ),
                                              m_matrix->getListRow( 4 ) };
 
-         cosOfSide = findAngleOfFacetAndPoint( lightColor, tmpListFacet, 0 );
+         cosOfSide = findAngleOfFacetAndPoint( lightColor, tmpListFacet, 0 ) * lightingIntensity;
          if ( isVisibleFacet( tmpListFacet ) )
               drawFacet( tmpListFacet, QList<float>{ 0 * cosOfSide, 0 * cosOfSide, 1 * cosOfSide } );
 
@@ -98,7 +100,7 @@ namespace Figures
                                              m_matrix->getListRow( 7 ),
                                              m_matrix->getListRow( 4 ) };
 
-         cosOfSide = findAngleOfFacetAndPoint( lightColor, tmpListFacet, 1 );
+         cosOfSide = findAngleOfFacetAndPoint( lightColor, tmpListFacet, 1 ) * lightingIntensity;
          if ( isVisibleFacet( tmpListFacet ) )
               drawFacet( tmpListFacet, QList<float>{ 1 * cosOfSide, 1 * cosOfSide, 0 * cosOfSide } );
 
@@ -109,7 +111,7 @@ namespace Figures
                                              m_matrix->getListRow( 7 ),
                                              m_matrix->getListRow( 6 ) };
 
-         cosOfSide = findAngleOfFacetAndPoint( lightColor, tmpListFacet, 0 );
+         cosOfSide = findAngleOfFacetAndPoint( lightColor, tmpListFacet, 0 ) * lightingIntensity;
          if ( isVisibleFacet( tmpListFacet ) )
               drawFacet( tmpListFacet, QList<float>{ 0 * cosOfSide, 1 * cosOfSide, 1 * cosOfSide } );
 
@@ -120,7 +122,7 @@ namespace Figures
                                              m_matrix->getListRow( 6 ),
                                              m_matrix->getListRow( 7 ) };
 
-         cosOfSide = findAngleOfFacetAndPoint( lightColor, tmpListFacet, 0 );
+         cosOfSide = findAngleOfFacetAndPoint( lightColor, tmpListFacet, 0 ) * lightingIntensity;
          if ( isVisibleFacet( tmpListFacet ) )
              drawFacet( tmpListFacet, QList<float>{ 1 * cosOfSide, 0 * cosOfSide, 1 * cosOfSide } );
     }

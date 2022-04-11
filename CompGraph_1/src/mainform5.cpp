@@ -25,10 +25,12 @@ void MainForm5::initGui()
              openGlWidget, SLOT( rotateViaOY( float, Figures::Figure3D * ) ) );
     connect( this, SIGNAL( ZAngleChanched( float, Figures::Figure3D * ) ),
              openGlWidget, SLOT( rotateViaOZ( float, Figures::Figure3D * ) ) );
+    connect( this, SIGNAL( lightChanged( int ) ),
+             openGlWidget, SLOT( onLightChanged( int ) ) );
 
     QHBoxLayout * mainLayout    = new QHBoxLayout();
     QGroupBox   * slidersGB     = new QGroupBox();
-    slidersGB->setTitle( "Поворот" );
+    slidersGB->setTitle( "Инструменты" );
 
     QVBoxLayout * slidersLayout = new QVBoxLayout();
 
@@ -40,9 +42,15 @@ void MainForm5::initGui()
         listOfAngles[i]->setValue( 0 );
     }
 
+    QSlider * lightSlider = new QSlider( Qt::Orientation::Horizontal );
+    slidersLayout->addWidget( lightSlider );
+    lightSlider->setRange( 0, 100 );
+    lightSlider->setValue( 100 );
+
     connect( listOfAngles[0], SIGNAL( valueChanged( int ) ), this, SLOT( onXAngleChanched() ) );
     connect( listOfAngles[1], SIGNAL( valueChanged( int ) ), this, SLOT( onYAngleChanched() ) );
     connect( listOfAngles[2], SIGNAL( valueChanged( int ) ), this, SLOT( onZAngleChanched() ) );
+    connect( lightSlider, SIGNAL( valueChanged( int ) ), this, SLOT( onLightChanged( int ) ) );
 
     slidersGB->setLayout( slidersLayout );
 
@@ -80,4 +88,9 @@ void MainForm5::onZAngleChanched()
     else if ( listOfAngles[2]->value() < prevValue )
         emit ZAngleChanched( -0.1, nullptr );
     prevValue = listOfAngles[2]->value();
+}
+
+void MainForm5::onLightChanged( int value )
+{
+    emit lightChanged( value );
 }
